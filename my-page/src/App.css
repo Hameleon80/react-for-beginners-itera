@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  padding: 30px;
+  padding: 20px 100px;
 }
 
 .App-logo {
@@ -36,4 +36,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.textStyle{
+  color: aliceblue;
+}
+
+.header{
+  color: rgba(10, 10, 10, 0.466);
+  text-align: center;
+}
+
+.textName{
+  color: cornflowerblue;
+}
+
+.text{
+  padding-left: 20px;
+  color: darkgray;
+}
+
+.textFooter{
+  vertical-align: bottom;
+  text-align: left;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  left:20px; bottom: 20px;
+  color: rgb(8, 8, 8);
 }
