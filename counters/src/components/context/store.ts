@@ -1,11 +1,14 @@
 
 export type Timer = {
-    houres: number,
-    setHoures: (hr: number) => void,
-    minutes: number,
-    setMinutes: (mn: number) => void,
-    seconds: number,
-    setSeconds: (sec: number) => void,
-    isStarted: boolean,
-    setIsStarted: (isStart: boolean) => void
+    startTime: number,
+    setStartTime: (hr: number) => void,
+    currentTime: number,
+    setCurrentTime: (mn: number) => void,
   };
+
+  export const defaultData: Timer = {
+    startTime: Date.now(),
+    setStartTime: (hr: number) => {},
+    currentTime: Date.now(),
+    setCurrentTime: (mn: number) => {}
+  }
