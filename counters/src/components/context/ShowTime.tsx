@@ -1,6 +1,5 @@
 import { useContext } from "react"
-import { TimerCtx } from "../../App"
-
+import { TimerCtx } from "./store";
 
 export function ShowTime() {
   const { startTime, currentTime } = useContext(TimerCtx)

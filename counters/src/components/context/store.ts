@@ -1,3 +1,4 @@
+import { createContext } from "react";
 
 export type Timer = {
     startTime: number,
@@ -12,3 +13,5 @@ export type Timer = {
     currentTime: Date.now(),
     setCurrentTime: (mn: number) => {}
   }
+
+  export const TimerCtx = createContext<Timer>(defaultData)

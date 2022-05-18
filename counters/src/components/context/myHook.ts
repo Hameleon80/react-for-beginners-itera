@@ -1,23 +1,21 @@
-import { useContext, useState } from "react";
-import { TimerCtx } from "../../App";
+import { useContext, useRef, useState } from "react";
+import { TimerCtx } from "./store";
 
 export const useTimerContext = () => {
-
+    //Hooks
     const [isStarted, setIsStarted] = useState(false);
-    const [intervalId, setIntervalId] = useState(0)
+    const [intervalId, setIntervalId] = useState(0);
+    let timerId = useRef<number>(0);
 
     const { setStartTime, setCurrentTime } = useContext(TimerCtx);
 
-    document.title = isStarted ? 'Timer started' : 'Timer'
-
     function mySetInterval(): number {
-        let id = 0;
         if (window) {
-            id = window.setInterval(() => {
+            timerId.current = window.setInterval(() => {
                 setCurrentTime(Date.now());
             }, 1000);
         }
-        return id;
+        return timerId.current;
     }
 
     const handlerOnStart = () => {

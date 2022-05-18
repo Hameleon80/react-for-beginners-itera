@@ -1,11 +1,8 @@
-import { createContext, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { CountersWithContext } from './components/context/CounterWithContext';
 import { CounterWithMobx } from './components/mobx/CounterWithMobx';
-import { Timer } from './components/context/store';
-import { defaultData } from './components/context/store'
-
-export const TimerCtx = createContext<Timer>(defaultData)
+import { TimerCtx } from './components/context/store';
 
 function App() {
 
