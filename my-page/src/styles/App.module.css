@@ -1,0 +1,32 @@
+html {
+  background-color: rgba(40, 29, 196, 0.85);
+}
+
+.App {
+  text-align: left;
+  padding: 20px 40px;
+}
+
+.header{
+  color: rgb(56, 33, 160);
+  text-align: center;
+}
+
+.textName{
+  color: rgb(56, 33, 160);
+}
+
+.text{
+  padding-left: 20px;
+  color: rgb(214, 211, 29);
+}
+
+.textFooter{
+  vertical-align: bottom;
+  text-align: left;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  left:20px; bottom: 20px;
+  color: rgb(8, 8, 8);
+}

@@ -1,5 +1,7 @@
+import styles from '../styles/App.module.css'
+
 export function Header() {
     return (
-        <div className="header"><h1>Welcom to my personal page!</h1></div>
+        <div className={styles.header}><h1>Welcom to my personal page!</h1></div>
     )
 }
